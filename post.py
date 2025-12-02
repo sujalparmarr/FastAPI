@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from typing import List, Optional
-import json
+import json 
 
 app = FastAPI()
 
@@ -28,4 +28,5 @@ def register_user(user: User):
     users = load_users()
     users.append(user.dict())
     save_users(users)
+
     return {"message": "User registered successfully!", "data": user}
