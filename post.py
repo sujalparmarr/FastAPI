@@ -30,3 +30,4 @@ def register_user(user: User):
     save_users(users)
 
     return {"message": "User registered successfully!", "data": user}
+
