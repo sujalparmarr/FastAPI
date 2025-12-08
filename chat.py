@@ -28,3 +28,4 @@ def register_user(user: User):
     users.append(user.dict())
     save_users(users)
     return {"message": "User registered successfully!", "data": user}
+
