@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field, ValidationError, field_validator, computed_field
 from typing import Optional, List, Dict
-  
+
 class User(BaseModel):
     id: int
     name: str
